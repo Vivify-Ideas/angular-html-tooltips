@@ -1,0 +1,82 @@
+.html-tooltip {
+    max-width: 300px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    position: absolute;
+    z-index: -100;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.html-tooltip .content {
+    color: #4a4a4a;
+    background: #fff;
+    z-index: 100;
+    padding: 15px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+.html-tooltip .content h2 {
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #027db4;
+    margin: 0;
+}
+.html-tooltip .content h3 {
+    line-height: 19px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    margin: 0;
+}
+.html-tooltip .content p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #4a4a4a;
+    margin: 0;
+}
+.html-tooltip .tip {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+}
+.html-tooltip.tip-top .tip {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%) rotate(135deg);
+    -webkit-box-shadow: 2px -2px 4px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px -2px 4px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 2px -2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+.html-tooltip.tip-bottom .tip {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.html-tooltip.tip-right .tip {
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -webkit-box-shadow: -1px 2px 2px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -1px 2px 2px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: -1px 2px 2px -1px rgba(0, 0, 0, 0.3);
+}
+.html-tooltip.tip-left .tip {
+    top: 50%;
+    right: 0;
+    transform: translateX(50%) translateY(-50%) rotate(-135deg);
+    -webkit-box-shadow: -2px 1px 4px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -2px 1px 4px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: -2px 1px 4px -1px rgba(0, 0, 0, 0.3);
+}
+.html-tooltip.display {
+    z-index: 77;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

@@ -36,7 +36,8 @@
               var horizontalOffset = 35;
               var verticalOffset = 20;
               var createTooltip = function() {
-                var tipClass = scope.direction ? 'tip-' + scope.direction : 'tip-left html-tooltip';
+                var tipClass = scope.direction ? 'tip-' + scope.direction : 'tip-left';
+                tipClass += ' html-tooltip';
                 var style = scope.width ? 'style="max-width:' + scope.width + 'px" ' : '';
                 tooltip = angular.element('<div '+ style +'class="' + tipClass + '"></div>');
 
