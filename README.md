@@ -16,6 +16,12 @@ or
 bower install vi-angular-html-tooltips
 ```
 
+or
+
+```
+yarn add vi-angular-html-tooltips
+```
+
 ### Require the module:
 
 ```javascript
